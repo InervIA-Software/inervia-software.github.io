@@ -342,6 +342,10 @@ p {
   margin-bottom: 8px;
 }
 
+.feature-card p {
+  font-size: 0.97rem;
+}
+
 .flow-list {
   list-style: none;
   margin: 0;
@@ -355,7 +359,7 @@ p {
   grid-template-columns: 42px minmax(0, 1fr);
   gap: 14px;
   align-items: start;
-  padding: 16px 18px;
+  padding: 15px 16px;
   background: var(--surface-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -423,6 +427,7 @@ p {
 
 .shot-caption p {
   font-size: 0.93rem;
+  line-height: 1.58;
 }
 
 .metric-line {
