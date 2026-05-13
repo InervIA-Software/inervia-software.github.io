@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="/">
         <img class="brand-icon" src="/assets/img/inervia_app_icon.png" alt="Icono de InervIA">
         <span class="brand-copy">
           <strong>InervIA Software</strong>
-          <span>Sitio público estático</span>
+          <span>Sitio público corporativo</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="Principal">
@@ -28,36 +28,51 @@
     </header>
 
     <main>
-      <section class="card">
-        <p class="eyebrow">Inicio</p>
-        <h1>InervIA Software</h1>
-        <p class="lead">
-          Sitio público de InervIA Software para páginas de producto y políticas de privacidad.
-        </p>
-        <div class="actions">
-          <a class="button button-primary" href="/apps/inervia-bacnet-suite.html">InervIA BACnet Suite</a>
-          <a class="button" href="/privacy/inervia-bacnet-suite.html">Política de privacidad</a>
+      <section class="hero-panel">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">InervIA</p>
+            <h1>Presencia pública clara para producto, soporte y privacidad.</h1>
+            <p class="lead">
+              Sitio público de InervIA Software para páginas de producto y políticas de
+              privacidad, diseñado para ofrecer una imagen sobria y profesional.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="/apps/inervia-bacnet-suite.html">Ver InervIA BACnet Suite</a>
+              <a class="button" href="/privacy/inervia-bacnet-suite.html">Abrir política de privacidad</a>
+            </div>
+          </div>
+
+          <aside class="brand-card">
+            <img class="logo-mark" src="/assets/img/inervia_logo_light.jpg" alt="Logotipo de InervIA Software">
+            <p>
+              Punto de entrada público para información de producto, contacto y
+              documentación esencial.
+            </p>
+          </aside>
         </div>
       </section>
 
-      <section class="grid grid-2">
-        <article class="section-card">
-          <p class="eyebrow">Producto</p>
+      <section class="info-grid">
+        <article class="section-panel">
+          <p class="eyebrow">Producto publicado</p>
           <h2>InervIA BACnet Suite</h2>
           <p class="lead">Herramienta profesional BACnet/IP para Android.</p>
           <p>Exploración, lectura, escritura, tendencias y operación BACnet/IP desde Android.</p>
+          <p class="metric-line"><a href="/apps/inervia-bacnet-suite.html">Abrir ficha pública del producto</a></p>
         </article>
 
-        <article class="section-card">
+        <article class="section-panel">
           <p class="eyebrow">Privacidad</p>
-          <h2>Política disponible</h2>
+          <h2>Documento público disponible</h2>
           <p class="lead">La política pública de InervIA BACnet Suite ya está publicada.</p>
           <p>URL crítica para Play Console: <span class="inline-code">/privacy/inervia-bacnet-suite.html</span></p>
+          <p class="metric-line"><a href="/privacy/inervia-bacnet-suite.html">Abrir política de privacidad</a></p>
         </article>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer-panel">
       <p>Contacto público: <span class="inline-code">inervia.soporte@outlook.com</span></p>
       <p>Sin JavaScript, sin cookies, sin analítica, sin trackers y sin dependencias externas.</p>
     </footer>

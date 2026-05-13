@@ -1,6 +1,6 @@
 # inervia-software.github.io
 
-Sitio público estático de InervIA Software para páginas de producto y políticas de privacidad.
+Sitio público estático de InervIA Software para páginas de producto, contacto y políticas de privacidad.
 
 ## URLs públicas
 
@@ -14,4 +14,4 @@ Sitio público estático de InervIA Software para páginas de producto y políti
 
 ## Nota
 
-- Sitio público estático sin JavaScript, sin analítica, sin trackers y sin dependencias externas.
+- Sitio público estático sin JavaScript, sin cookies, sin analítica, sin trackers y sin dependencias externas.
