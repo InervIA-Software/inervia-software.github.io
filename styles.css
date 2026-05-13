@@ -382,7 +382,7 @@ p {
 .gallery-grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .shot-card {
@@ -394,12 +394,17 @@ p {
 
 .shot-frame {
   padding: 12px;
+  min-height: 0;
   background: linear-gradient(180deg, rgba(123, 43, 210, 0.04), rgba(255, 255, 255, 0));
 }
 
 .shot-frame img {
-  width: 100%;
-  height: auto;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 360px;
+  margin: 0 auto;
+  object-fit: contain;
   border-radius: 12px;
   border: 1px solid rgba(229, 217, 242, 0.88);
   box-shadow: var(--shadow-sm);
@@ -414,6 +419,10 @@ p {
   margin-bottom: 6px;
   color: var(--text);
   font-size: 0.98rem;
+}
+
+.shot-caption p {
+  font-size: 0.93rem;
 }
 
 .metric-line {
@@ -445,6 +454,34 @@ p {
 
 .list li a {
   color: var(--text);
+}
+
+.linked-card {
+  display: block;
+  color: inherit;
+}
+
+.linked-card:hover,
+.linked-card:focus-visible {
+  text-decoration: none;
+}
+
+.linked-card h3 {
+  transition: color 180ms ease;
+}
+
+.linked-card:hover h3,
+.linked-card:focus-visible h3 {
+  color: var(--primary-dark);
+}
+
+.list-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .product-hero {
@@ -570,7 +607,6 @@ p {
   .grid-2,
   .info-grid,
   .feature-grid,
-  .gallery-grid,
   .article-layout,
   .legal-layout {
     grid-template-columns: 1fr;
@@ -621,5 +657,9 @@ p {
 
   h1 {
     font-size: 1.7rem;
+  }
+
+  .shot-frame img {
+    max-height: 280px;
   }
 }
