@@ -146,7 +146,7 @@ a:focus-visible {
 .article-panel,
 .aside-panel,
 .footer-panel {
-  padding: 22px;
+  padding: 20px;
 }
 
 .hero-panel,
@@ -198,8 +198,8 @@ p {
 
 .lead {
   margin-top: 12px;
-  max-width: 64ch;
-  font-size: 1.03rem;
+  max-width: 60ch;
+  font-size: 1rem;
 }
 
 .subtle {
@@ -316,7 +316,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 18px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .meta-links a,
@@ -402,7 +402,7 @@ p {
   display: block;
   width: auto;
   max-width: 100%;
-  max-height: 360px;
+  max-height: 320px;
   margin: 0 auto;
   object-fit: contain;
   border-radius: 12px;
@@ -488,7 +488,7 @@ p {
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr);
   gap: 18px;
-  align-items: start;
+  align-items: center;
 }
 
 .product-hero .app-icon {
@@ -498,6 +498,10 @@ p {
   border: 1px solid var(--border);
   background: #ffffff;
   object-fit: contain;
+}
+
+.product-hero .lead {
+  max-width: 76ch;
 }
 
 .article-layout {
@@ -660,6 +664,6 @@ p {
   }
 
   .shot-frame img {
-    max-height: 280px;
+    max-height: 240px;
   }
 }
